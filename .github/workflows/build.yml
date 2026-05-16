@@ -23,8 +23,8 @@ jobs:
     - name: Install Buildozer Dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y git zip unzip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev libssl-dev
-        pip install --user --upgrade buildozer cython virtualenv
+        sudo apt-get install -y git zip unzip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev libssl-dev python3-pip python3-setuptools python3-virtualenv
+        pip install --user --upgrade buildozer cython virtualenv --break-system-packages
 
     - name: Build with Buildozer
       run: |
